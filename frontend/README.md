@@ -1,17 +1,15 @@
-# React + TypeScript + Vite
+## Local Environment
+- **pnpm** (https://pnpm.io/)
+- **Vite** build tool (https://vite.dev/)
+- **React** using **React Compiler** (https://react.dev/)
+- **Typescript** (https://www.typescriptlang.org/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Running locally
 
-Currently, two official plugins are available:
+```sh 
+pnpm install && vite 
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
 
 ## Expanding the ESLint configuration
 
