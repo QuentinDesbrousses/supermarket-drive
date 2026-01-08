@@ -2,6 +2,8 @@
 Web app for supermarket online purchase (drive)
 
 # Technology
-This project is implemented with React TypeScript (frontend) and Ruby on Rails framework (backend).
+This project was mad for training purposes. 
+It uses different stacks for both frontend and backend
 
-See the [backend](backend\README.md) & [frontend](frontend\README.md) docs to learn more about running the app locally.
+See the frontend  docs to learn more about running the app locally :
+- [React app](frontend\README.md)
