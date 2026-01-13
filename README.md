@@ -6,4 +6,4 @@ This project was mad for training purposes.
 It uses different stacks for both frontend and backend
 
 See the frontend  docs to learn more about running the app locally :
-- [React app](frontend-react\README.md)
+[React app](https://github.com/QuentinDesbrousses/supermarket-drive/blob/main/frontend-react/README.md)

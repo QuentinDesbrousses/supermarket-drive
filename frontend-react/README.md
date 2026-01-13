@@ -7,5 +7,5 @@
 ### Running locally
 
 ```sh 
-pnpm install && vite 
+pnpm install && pnpm vite 
 ```
