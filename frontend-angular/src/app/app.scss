@@ -1,0 +1,70 @@
+@use "./shared/styles/mixins" as *;
+@use "./shared/styles/theme" as *;
+@use "./shared/styles/animations" as *;
+
+
+#top-bar {
+    height: 8vh;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    @include for-mobile-only {
+        height: 6vh;
+    }
+    @include for-debug(aqua,'top-bar box',true)
+}
+
+#nav-bar {
+    height: 5vh;
+    width: 100%;
+    top: 8vh;
+    position:fixed;
+    @include for-mobile-only {
+        top: 6vh;
+        height: 4vh;
+    }
+    @include for-debug(rgb(247, 164, 11), 'nav-bar box')
+}
+
+#app-content {
+    min-height: 87vh;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    top: 13vh;
+    position: absolute;
+    display:flex;
+    @include for-mobile-only {
+        top: 10vh;        
+    }
+    @include for-debug(rgb(155, 40, 40), 'app box');
+}
+
+#page-content {
+    min-height: 87vh;
+    width: 100%;
+    flex-grow:inherit;
+    @include for-mobile-only {
+        left:0vw;
+    }
+    @include for-debug(lightcoral, 'content box',true);
+}
+
+#cart-bar {
+    height: 87vh;
+    right: 0;
+    width: 20vw;
+    flex-shrink: initial;
+    @include for-mobile-only {
+        width: 30vw;
+    }
+    @include for-debug(rgb(252, 143, 0), 'card-bar box',true)
+}
+
+.cart-enter-animation {
+    animation: slide-right-to-left .5s;
+}
+
+.cart-leave-animation {
+    animation: slide-left-to-right .5s;
+}

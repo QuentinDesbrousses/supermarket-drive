@@ -1,5 +1,21 @@
-<main class="main">
-  Frontend Angular
+<main class="container">
+  <div id="app-content">
+    <div id="page-content">
+        <router-outlet/>
+    </div>
+    @if (showCart()) {
+      <div id="cart-bar" [animate.enter]="cartEnterClass()" [animate.leave]="cartLeaveClass()">
+        <app-cart-bar />
+      </div>
+    }
+  </div>
+  <div id="top-bar">
+    <button type="button" class="toggle-btn" (click)="toggle()">Toggle Element</button>
+    <app-top-bar/>
+  </div>
+  <div id="nav-bar">
+    <app-nav-bar/>
+  </div>
 </main>
 
-<router-outlet />
+

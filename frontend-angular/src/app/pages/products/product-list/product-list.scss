@@ -1,0 +1,32 @@
+@use '../../../shared/styles/mixins' as *;
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include for-mobile-only {
+        flex-direction: column;
+    }
+}
+
+.left-bar {
+    flex: 1;
+    height: 87vh;
+    @include for-mobile-only {
+        min-height: 8vh;
+        width: 100%;
+    }
+    @include for-debug(aquamarine)
+}
+
+.content {
+    flex:5;
+    min-height: 87vh;
+    @include for-mobile-only {
+        width: 100%;
+        min-height: 79vh;
+    }
+    @include for-debug(crimson)
+}

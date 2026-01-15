@@ -1,0 +1,7 @@
+@use '../../../shared/styles/mixins' as *;
+
+.container {
+    height: 100%;
+    width: 100%;
+    @include for-debug(purple,'cart component')
+}

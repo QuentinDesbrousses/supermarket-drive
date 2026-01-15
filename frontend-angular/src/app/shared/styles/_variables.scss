@@ -1,0 +1,13 @@
+
+/* 
+Mobile screen size limit.
+This is used to define responsive behaviour.
+
+*/
+$mobile: 1024px;
+
+/* 
+> Change this value for debug purposes.
+This is used inside mixins to highlight blocs. (see mixins)
+*/
+$global-debug: true;

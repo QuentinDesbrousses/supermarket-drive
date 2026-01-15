@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+@mixin for-mobile-only {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin for-debug($color, $name: '', $debug: $global-debug) {
+    @if $debug {
+        outline: solid 3px $color;
+        @if $global-debug {
+            background-color: $color;
+        }
+        &::before {
+            z-index: 1000;
+            position: absolute;
+            content: $name;
+            color: $color;
+            background-color: white;
+            justify-self: baseline;
+        }
+    }
+}
