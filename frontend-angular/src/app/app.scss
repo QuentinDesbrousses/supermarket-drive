@@ -1,7 +1,4 @@
-@use "./shared/styles/mixins" as *;
-@use "./shared/styles/theme" as *;
-@use "./shared/styles/animations" as *;
-
+@use "@styles" as *;
 
 #top-bar {
     height: 8vh;
@@ -11,7 +8,7 @@
     @include for-mobile-only {
         height: 6vh;
     }
-    @include for-debug(aqua,'top-bar box',true)
+    @include for-debug(aqua,'top-bar box')
 }
 
 #nav-bar {
@@ -47,7 +44,7 @@
     @include for-mobile-only {
         left:0vw;
     }
-    @include for-debug(lightcoral, 'content box',true);
+    @include for-debug(lightcoral, 'content box');
 }
 
 #cart-bar {
@@ -58,13 +55,13 @@
     @include for-mobile-only {
         width: 30vw;
     }
-    @include for-debug(rgb(252, 143, 0), 'card-bar box',true)
+    @include for-debug(rgb(252, 143, 0), 'card-bar box')
 }
 
 .cart-enter-animation {
-    animation: slide-right-to-left .5s;
+    animation: slide-right-to-left .2s;
 }
 
 .cart-leave-animation {
-    animation: slide-left-to-right .5s;
+    animation: slide-left-to-right .2s;
 }

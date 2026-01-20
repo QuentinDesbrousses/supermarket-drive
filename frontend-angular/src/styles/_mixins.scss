@@ -1,4 +1,19 @@
-@use './variables' as *;
+/* 
+Mobile screen size limit.
+This is used to define responsive behaviour.
+
+*/
+$mobile: 1024px;
+
+/* 
+> Change this value for debug purposes.
+This is used inside mixins to highlight blocs. (see mixins)
+*/
+$global-debug: false;
+
+
+
+/** MIXINS **/
 
 @mixin for-mobile-only {
     @media (max-width: $mobile) {
@@ -21,4 +36,9 @@
             justify-self: baseline;
         }
     }
+}
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
 }

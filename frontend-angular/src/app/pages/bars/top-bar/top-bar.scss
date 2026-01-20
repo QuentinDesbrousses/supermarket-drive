@@ -1,0 +1,25 @@
+@use "@styles" as *;
+
+.container {
+    @include full-size();
+    @include for-debug(green, 'top-bar component');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#search-bar {
+    @include full-size();
+    @include  for-debug(lightblue, 'search bar box', true);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#info-bar {
+    @include full-size();
+    @include  for-debug(lightgray, 'info bar box', true);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

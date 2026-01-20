@@ -30,7 +30,7 @@
               }
             ],
             "styles": [
-              "src/_styles.scss"
+              "src/styles.scss"
             ]
           },
           "configurations": {

@@ -1,7 +1,0 @@
-@use '../../../shared/styles/mixins' as *;
-
-.container {
-    height: 100%;
-    width: 100%;
-    @include for-debug(green, 'top-bar component')
-}

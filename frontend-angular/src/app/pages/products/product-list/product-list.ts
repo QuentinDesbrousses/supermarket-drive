@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LeftBar } from "../../container/left-bar/left-bar";
+import { LeftBar } from "../../bars/left-bar/left-bar";
 
 @Component({
   selector: 'app-product-list',
